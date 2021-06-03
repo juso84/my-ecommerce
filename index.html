@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="build/css/all.min.css" type="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="build/css/hamburgers.min.css">
     <link rel="stylesheet" href="build/css/app.css">
     <title>FontEnd Store | Tienda virtual</title>
 
 </head>
-<body>    
-    
+<body>   
     <div class="hero">        
         <header class="header">
             <div class="nav-bar container">
@@ -39,8 +40,8 @@
             <div class="navMenu inactivo">
                 <ul class="links">
                     <li><a href="#" data-text="home">Inicio</a></li>
-                    <li><a href="#tienda" data-text="shop">Tienda</a></li>
-                    <li><a href="#about" data-text="about">Nosotros</a></li>
+                    <li><a href="shop.html" data-text="shop">Tienda</a></li>
+                    <li><a href="#releases" data-text="releases">Lanzamientos</a></li>
                     <li><a href="#" data-text="contact">Contacto</a></li>
                     <li><a href="#" data-text="account">Cuenta</a></li>
                 </ul>                       
@@ -50,26 +51,62 @@
             <div class="hero__left">
                 <h1>FrontEnd <span>Store</span></h1>
                 <p class="slogan">¡Codifica con estilo!</p>
-                <a class="button" href="#tienda">Let's Shop!</a>
+                <a class="button btn-primary" href="shop.html">Let's Shop!</a>
             </div>
             <div class="hero__right">
                 <img src="build/img/bolsas.png" alt="">
             </div>
         </div><!--hero-content-->        
     </div>
-    <main class="contenedor new-section" id="about">
-        <h2 class="titulo">Nosotros</h2>
-        <div class="about-content container">
-            <p class="about-text">Odit quasi perspiciatis non laboriosam delectus suscipit inventore impedit molestiae. 
-                Qui molestias reprehenderit dolores adipisci assumenda autem nihil aliquid officia enim quis? Lorem 
-                ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor nostrum earum ipsum deleniti 
-                voluptate, expedita velit nemo veniam tenetur voluptates repudiandae. Magni, quo. Soluta perferendis
-                rum esse nobis sequi.</p>
-                <h3 class="titulo">Por qué elegirnos!</h3>
-            <div class="cards">
-                <div class="card"></div>
-            </div>
+    <main class="new-section container text-center" id="releases">
+        <h2 class="titulo">Lanzamientos</h2>
+        <div class="releases">
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/1.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex VUEJS</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/7.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex HTML5</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/12.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex JavaScript</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/6.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex SASS</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
         </div>
+        <a href="shop.html" class="button btn-primary">Ver todos</a>
         
     </main>
 <script src="build/js/bundle.min.js"></script>    
