@@ -16,7 +16,7 @@
 
 </head>
 <body>   
-    <div class="hero">        
+    <div class="hero" id="hero">        
         <header class="header">
             <div class="nav-bar container">
                 <a href="index.html" class="logo">
@@ -39,11 +39,11 @@
             </div><!--nav-bar-->
             <div class="navMenu inactivo">
                 <ul class="links">
-                    <li><a href="#" data-text="home">Inicio</a></li>
+                    <li><a href="#hero" data-text="home">Inicio</a></li>
                     <li><a href="shop.html" data-text="shop">Tienda</a></li>
                     <li><a href="#releases" data-text="releases">Lanzamientos</a></li>
-                    <li><a href="#" data-text="contact">Contacto</a></li>
-                    <li><a href="#" data-text="account">Cuenta</a></li>
+                    <li><a href="#about" data-text="about us">Nosotros</a></li>
+                    <li><a href="#whyChoose" data-text="choose us">Elígenos!</a></li>
                 </ul>                       
             </div><!--navMenu--> 
         </header><!--header-->         
@@ -106,9 +106,116 @@
                 </div><!--release-info-->
             </div><!--release-->
         </div>
-        <a href="shop.html" class="button btn-primary">Ver todos</a>
-        
-    </main>
+        <a href="shop.html" class="button btn-primary">Ver todos</a>        
+    </main><!--releases-->
+    <section class="about new-section container text-center" id="about">
+        <h2 class="titulo">¿Quienes somos?</h2>
+        <p>"By all means, the basic layout for segments of the primary element must take into account 
+            the possibility of The Enhancement of Reasonable Access". (Broderick Higdon in The Book of 
+            the Individual Elements) In short, the functional testing makes no difference to this linguistic 
+            approach.</p> 
+        <p>
+             This can eventually cause certain issues.  
+            One of the most striking features of this problem is that in the context of the profit 
+            reinforces the argument for any provisional or productive approach. 
+        </p>
+        <div class="staff">
+            <div class="member">
+                <div class="member_img">
+                    <img src="build/img/staff-member.jpg" alt="Staff Member">
+                </div>
+                <div class="member__info">
+                    <h3>Jane Doe</h3>
+                    <p>CEO</p>
+                </div>
+            </div><!--member-->
+            <div class="member">
+                <div class="member_img">
+                    <img src="build/img/staff-member.jpg" alt="Staff Member">
+                </div>
+                <div class="member__info">
+                    <h3>Jane Doe</h3>
+                    <p>Gerente de ventas</p>
+                </div>
+            </div><!--member-->
+            <div class="member">
+                <div class="member_img">
+                    <img src="build/img/staff-member.jpg" alt="Staff Member">
+                </div>
+                <div class="member__info">
+                    <h3>Jane Doe</h3>
+                    <p>Vndededora</p>
+                </div>
+            </div><!--member-->
+        </div>
+    </section><!--about-us-->
+    <section class="new-section container text-center" id="whyChoose">
+        <h2 class="titulo">¿Por qué elegirnos?</h2>
+        <div class="eligenos-contenido">
+            <div class="beneficios">
+                <div class="beneficio">
+                    <div class="beneficio__img">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="beneficio__contenido">
+                        <h3>El mejor precio</h3>
+                        <p>Nam id pariatur fuga, doloremque aliquam accusamus et quas </p>
+                    </div>
+                </div><!--beneficio-->
+                <div class="beneficio">
+                    <div class="beneficio__img">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="beneficio__contenido">
+                        <h3>Para devs</h3>
+                        <p>Nam id pariatur fuga, doloremque aliquam accusamus et quas </p>
+                    </div>
+                </div><!--beneficio-->
+                <div class="beneficio">
+                    <div class="beneficio__img">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <div class="beneficio__contenido">
+                        <h3>Envio gratis</h3>
+                        <p>Nam id pariatur fuga, doloremque aliquam accusamus et quas </p>
+                    </div>
+                </div><!--beneficio-->
+                <div class="beneficio">
+                    <div class="beneficio__img">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="beneficio__contenido">
+                        <h3>La mejor calidad</h3>
+                        <p>Nam id pariatur fuga, doloremque aliquam accusamus et quas </p>
+                    </div>
+                </div><!--beneficio-->
+            </div>
+            <div class="eligenos-img">
+                <img src="build/img/store-t-shirt.jpg" alt="Eligenos">
+            </div>
+        </div>
+    </section><!--beneficios-->
+    <div class="footer new-section">
+        <div class="social">
+            <div class="social__content">
+                <div class="site-name">
+                    <h2>frontend<span>store</span></h2>
+                </div>
+                <ul class="social-networks">
+                    <li>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        <p>FrontEnd Store 2021 &copyTodos los derechos reservados Julián Solorza</p>
+    </div>
 <script src="build/js/bundle.min.js"></script>    
 </body>
 </html>
