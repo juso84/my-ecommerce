@@ -4,64 +4,250 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            color: #1c1c1c;
-            text-align: center;
-            line-height: 1.3;
-        }
-        body{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100vh;
-            width: 100%;
-            background-color: #E1E1E1;
-        }
-        h1{
-            font-size: 150px;
-            font-weight: bolder;
-            color: #1c1c1c3b;
-        }
-        @media (min-width: 768px){
-            h1{
-                font-size: 300px;
-            }
-            h2{
-                font-size: 25px;
-            }
-            p{
-                font-size: 20px;
-            }
-        }
-        
-        h2{
-            font-size: 60px;
-            font-weight: 400;
-        }
-        p{
-            font-size: 30px;
-            font-weight: 400;
-        }
-        a{
-            text-decoration: none;
-            font-size: 25px;
-            color: darkcyan;
-        }
+    <link rel="stylesheet" href="build/css/all.min.css" type="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="build/css/hamburgers.min.css">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>FontEnd Store | Tienda virtual</title>
 
-
-    </style>
 </head>
 <body>
+    <header class="header header-shop">
+        <div class="nav-bar container">
+            <a class="logo" href="index.html">
+                <h2>frontend<span>store</span></h2>
+            </a>
+            <div class="navigation">                      
+                <div class="shop-bag">
+                    <a href="#"><i class="fas fa-shopping-bag"><span class="count">5</span></i></a>
+                </div>
+                <div class="menu-bars"> 
+                    <input type="checkbox" id="collapse">                       
+                    <label for="collapse" class ="burguerMenu">
+                        <span id ="top"></span>
+                        <span id ="center"></span>
+                        <span id ="bottom"></span>
+                    </label>
+                    
+                </div><!--menu-bars-->
+            </div><!--navigation-->                               
+        </div><!--nav-bar-->
+        <div class="navMenu inactivo">
+            <ul class="links">
+                <li><a href="index.html" data-text="home">Inicio</a></li>
+                <li><a href="login.html" data-text="account">Cuenta</a></li>
+            </ul>                       
+        </div><!--navMenu--> 
+    </header><!--header-->      
+    <main class="container text-center" id="releases">
+        <h2 class="titulo">Catalogo</h2>
+        <div class="releases">
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/1.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex VUEJS</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/2.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex ANGULAR</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/3.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex REACT</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/4.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex REDUX</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/5.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex NODEJS</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/6.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex SASS</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/7.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex HTML5</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/8.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex GITHUB</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/9.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex BULMA</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/10.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex TYPESCRIPT</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/11.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex DRUPAL</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/12.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex JAVASCRIPT</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/13.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex CSS3</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/14.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex GULP</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/15.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex GRAPHQL</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+            <div class="release">
+                <div class="release__img">
+                    <img src="build/img/16.png" alt="release_1">
+                    <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
+                </div><!--release-img-->
+                <div class="release__info">
+                    <h3>Camiseta unisex WORDPRESS</h3>
+                    <p><span>Tallas: </span>S, M, L, XL.</p>
+                    <p class="price">$60.000</p>
+                </div><!--release-info-->
+            </div><!--release-->
+        </div>              
+    </main><!--releases-->
     
-    <h1>404</h1>
-    <h2>Page not found!</h2>
-    <p>Please try again later!</p>
-    <a href="index.html">Regresar</a>
-
+    <div class="footer new-section">
+        <div class="social">
+            <div class="social__content">
+                <a class="logo" href="index.html">
+                    <h2>frontend<span>store</span></h2>
+                </a>
+                <ul class="social-networks">
+                    <li>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        <footer>
+            <p>FrontEnd Store 2021 &copyTodos los derechos reservados Julián Solorza</p>
+        </footer>
+    </div>
+<script src="build/js/bundle.min.js"></script>    
 </body>
 </html>
