@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/all.min.css" type="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="build/css/hamburgers.min.css">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>FontEnd Store | Bolsa</title>
+
+</head>
+<body>
+    <div class="buydetails">
+        <header class="header header-shop">
+            <div class="nav-bar container">
+                <a class="logo" href="index.html">
+                    <h2>frontend<span>store</span></h2>
+                </a>
+                <div class="navigation">                      
+                    <div class="shop-bag">
+                        <a href="bag.html"><i class="fas fa-shopping-bag"><span class="count"></span></i></a>
+                    </div>
+                    <div class="menu-bars"> 
+                        <input type="checkbox" id="collapse">                       
+                        <label for="collapse" class ="burguerMenu">
+                            <span id ="top"></span>
+                            <span id ="center"></span>
+                            <span id ="bottom"></span>
+                        </label>                        
+                    </div><!--menu-bars-->
+                </div><!--navigation-->                               
+            </div><!--nav-bar-->
+            <div class="navMenu inactivo">
+                <ul class="links">
+                    <li><a href="index.html" data-text="home">Inicio</a></li>
+                    <li><a href="shop.html" data-text="shop">Tienda</a></li>
+                    <li><a href="login.html" data-text="account">Cuenta</a></li>
+                </ul>                       
+            </div><!--navMenu--> 
+        </header><!--header-->      
+       <main class="new-section container details text-center">
+        <h2 class="titulo">Detalles del producto</h2>
+        <div class="product">
+            <div class="product__img">
+                <div class="imagen">
+                    <img src="build/img/7.png" alt="Camiseta html5">
+                </div>
+                <h3 class="product__name">Camiseta unisex HTML5</h3>
+            </div>
+            <div class="product__info">
+                <form class="add__form">
+                   <div class="campo">
+                        <label class="campo__label">Talla:</label>
+                        <div class="tallas">
+                            <div class="talla">
+                                <input type="radio" name="talla" id="small" value="small">
+                                <label for="small">S</label>                                
+                            </div><!--talla-->
+                            <div class="talla">
+                                <input type="radio" name="talla" id="medium" value="medium">
+                                <label for="medium">M</label>                                
+                            </div><!--talla-->
+                            <div class="talla">
+                                <input type="radio" name="talla" id="large" value="large">
+                                <label for="large">L</label>                                
+                            </div><!--talla-->
+                            <div class="talla">
+                                <input type="radio" name="talla" id="extraLarge" value="extraLarge">
+                                <label for="extraLarge">XL</label>                                
+                            </div><!--talla-->                           
+                        </div><!--tallas-->
+                   </div><!--campo-->
+                   <div class="campo">
+                       <label class="campo__label" for="color">Color:</label>
+                       <select name="" id="color">
+                           <option value="none" selected disabled>Colores disponibles...</option>
+                           <option value="rojo">Rojo</option>
+                           <option value="blanco">Blanco</option>
+                           <option value="amarillo">Amarillo</option>
+                           <option value="verde">Verde</option>
+                           <option value="negro">Negro</option>
+                       </select>
+                   </div><!--campo-->
+                   <div class="campo">
+                       <label for="cantidad" class="campo__label">Cantidad:</label>
+                       <input type="number" id="cantidad" min="0" value="0">
+                   </div><!--campo-->
+                   <p class="precio">Precio x und. <span>$60.000</span></p>
+                   <input type="submit" value="Agregar" class="button btn-primary" id="agregar">
+                </form><!--add__form-->
+            </div>
+        </div>
+       </main><!--main details-->
+        
+        <div class="footer new-section">
+            <div class="social">
+                <div class="social__content">
+                    <a class="logo" href="index.html">
+                        <h2>frontend<span>store</span></h2>
+                    </a>
+                    <ul class="social-networks">
+                        <li>
+                            <a href=""><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram-square"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+            <footer>
+                <p>FrontEnd Store 2021 &copyTodos los derechos reservados Julián Solorza</p>
+            </footer>
+        </div>
+    </div>
+<script src="build/js/bundle.min.js"></script>    
+</body>
+</html>
