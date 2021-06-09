@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/all.min.css" type="stylesheet">
+    <meta name="description" content="Tienda virtual de camisetas unisex para desarrolladores">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="build/css/hamburgers.min.css">
     <link rel="stylesheet" href="build/css/app.css">
     <title>FontEnd Store | Tienda virtual</title>
 
@@ -65,7 +64,11 @@
         <div class="releases">
             <div class="release">
                 <div class="release__img">
-                    <img src="build/img/1.png" alt="release_1" data-id="1" data-nombre="VUEJS">
+                    <picture data-id="1" data-nombre="VUEJS">
+                        <source srcset="build/img/1.webp" alt="release_1" >
+                        <img src="build/img/1.png" alt="release_1">
+                    </picture>
+                    
                     <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
                 </div><!--release-img-->
                 <div class="release__info">
@@ -76,7 +79,10 @@
             </div><!--release-->
             <div class="release">
                 <div class="release__img">
-                    <img src="build/img/7.png" alt="release_1" data-id="7" data-nombre="HTML5">
+                    <picture data-id="7" data-nombre="HTML5">
+                        <source srcset="build/img/7.webp" alt="release_1">
+                        <img src="build/img/7.png" alt="release_1">
+                    </picture>                    
                     <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
                 </div><!--release-img-->
                 <div class="release__info">
@@ -87,7 +93,10 @@
             </div><!--release-->
             <div class="release">
                 <div class="release__img">
-                    <img src="build/img/12.png" alt="release_1" data-id="12" data-nombre="JavaScript">
+                    <picture data-id="12" data-nombre="JavaScript">
+                        <source srcset="build/img/12.webp" alt="release">
+                        <img src="build/img/12.png" alt="release">
+                    </picture>                    
                     <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
                 </div><!--release-img-->
                 <div class="release__info">
@@ -98,7 +107,10 @@
             </div><!--release-->
             <div class="release">
                 <div class="release__img">
-                    <img src="build/img/6.png" alt="release_1" data-id="6" data-nombre="SASS">
+                    <picture  data-id="6" data-nombre="SASS">
+                        <source srcset="build/img/6.webp" alt="release_1">
+                        <img src="build/img/6.png" alt="release_1">
+                    </picture>                    
                     <a href="" class="button btn-secundary addToBag">Agregar a la bolsa</a>
                 </div><!--release-img-->
                 <div class="release__info">
@@ -120,7 +132,10 @@
         <div class="staff">
             <div class="member">
                 <div class="member_img">
-                    <img src="build/img/staff-member.jpg" alt="Staff Member">
+                    <picture>
+                        <source srcset="build/img/staff-member.webp" alt="Staff Member">
+                        <img src="build/img/staff-member.jpg" alt="Staff Member">
+                    </picture>                    
                 </div>
                 <div class="member__info">
                     <h3>Jane Doe</h3>
@@ -129,7 +144,10 @@
             </div><!--member-->
             <div class="member">
                 <div class="member_img">
-                    <img src="build/img/staff-member.jpg" alt="Staff Member">
+                    <picture>
+                        <source srcset="build/img/staff-member.webp" alt="Staff Member">
+                        <img src="build/img/staff-member.jpg" alt="Staff Member">
+                    </picture>
                 </div>
                 <div class="member__info">
                     <h3>Jane Doe</h3>
@@ -138,7 +156,10 @@
             </div><!--member-->
             <div class="member">
                 <div class="member_img">
-                    <img src="build/img/staff-member.jpg" alt="Staff Member">
+                    <picture>
+                        <source srcset="build/img/staff-member.webp" alt="Staff Member">
+                        <img src="build/img/staff-member.jpg" alt="Staff Member">
+                    </picture>
                 </div>
                 <div class="member__info">
                     <h3>Jane Doe</h3>
@@ -189,7 +210,11 @@
                 </div><!--beneficio-->
             </div>
             <div class="eligenos-img">
-                <img src="build/img/store-t-shirt.jpg" alt="Eligenos">
+                <picture>
+                    <source srcset="build/img/store-t-shirt.webp" alt="Eligenos">
+                    <img src="build/img/store-t-shirt.jpg" alt="Eligenos">
+                </picture>
+                
             </div>
         </div>
     </section><!--beneficios-->
@@ -214,6 +239,7 @@
         </div>
         <p>FrontEnd Store 2021 &copyTodos los derechos reservados Julián Solorza</p>
     </div>
-<script src="build/js/bundle.min.js"></script>    
+<script src="build/js/bundle.min.js"></script>
+<script src="build/js/modernizer.js"></script>    
 </body>
 </html>
